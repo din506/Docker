@@ -31,4 +31,4 @@ ENV         DEBIAN_FRONTEND=noninteractive
 
 RUN         dpkg apt update \
 				&& apt upgrade -y \
-				&& apt -y --no-install-recommends install ca-certificates curl git gcc unzip zip tar jq
+				&& apt -y --no-install-recommends install ca-certificates curl git gcc unzip zip tar
