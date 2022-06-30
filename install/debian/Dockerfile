@@ -29,6 +29,6 @@ LABEL       org.opencontainers.image.licenses=MIT
 
 ENV         DEBIAN_FRONTEND=noninteractive
 
-RUN         app update \
+RUN         apt update \
 				&& apt upgrade -y \
 				&& apt -y --no-install-recommends install ca-certificates curl git gcc unzip zip tar wget
