@@ -37,7 +37,7 @@ RUN         dpkg --add-architecture i386 \
 
 COPY        ./requirments.txt /requirments.txt
 
-RUN         pip install requirments.txt
+RUN         pip install -r requirments.txt
 
 USER        container
 ENV         USER=container HOME=/home/container
