@@ -68,7 +68,7 @@ fi
 # Start Zomboi if needed
 if [ -z ${ZOMBOI} ] || [ "${ZOMBOI}" == "1" ]; then
   
-  /home/container/zomboi/python3 zomboi.py &
+  python3 /home/container/zomboi/zomboi.py &
 
 fi
 
