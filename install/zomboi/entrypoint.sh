@@ -72,7 +72,7 @@ if [ -z ${ZOMBOI} ] || [ "${ZOMBOI}" == "1" ]; then
   echo -e "CHANNEL=\"${CHANNEL}\"" >> /home/container/zomboi/.env
   
   echo -e "RCON_PASSWORD=\"${RCON_PASSWORD}\"" >> /home/container/zomboi/.env
-  echo -e "RCON_PORT=\"${RCON_PORT}\"" >> /home/container/zomboi/.env
+  echo -e "RCON_PORT=${RCON_PORT}" >> /home/container/zomboi/.env
   
   python3 /home/container/zomboi/zomboi.py &
 
