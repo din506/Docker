@@ -46,4 +46,6 @@ WORKDIR     /home/container
 RUN         git clone https://github.com/JonnyPtn/zomboi.git
 
 COPY        ./entrypoint.sh /entrypoint.sh
+COPY        ./default.env /home/container/zomboi/.env
+
 CMD         [ "/bin/bash", "/entrypoint.sh" ]
