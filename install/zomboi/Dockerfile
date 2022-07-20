@@ -43,7 +43,7 @@ USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
-RUN         git clone https://github.com/JonnyPtn/zomboi.git
+RUN         git clone https://github.com/din506/zomboi.git
 
 COPY        ./entrypoint.sh /entrypoint.sh
 COPY        ./default.env /home/container/zomboi/.env
